@@ -19,18 +19,10 @@ header {
   width: 100%;
   border-bottom: 1px solid seashell;
   display: flex;
-  position: fixed;
+  position: static;
   align-items: center;
-  overflow: hidden;
-}
-
-header nav span {
-  display: inline-block;
-  justify-content: flex-end;
-  text-decoration: underline;
-  font-size: 22px;
-  color: #fff5ee; /*Seashell*/
-  padding: 20px 10px;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 .logo img {
@@ -38,32 +30,46 @@ header nav span {
   height: 50px;
 }
 
+.navigation span {
+  display: inline-flex;
+  text-decoration: underline;
+  font-size: 22px;
+  color: #fff5ee; /*Seashell*/
+  padding: 20px 10px;
+}
+
+
 /*Mission*/
 
 .mission {
   display: flex;
-  padding-top: 100px;
-}
-
-.mission .mission-content {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   height: 700px;
   width: 1220px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+  padding-top: 70px;
 }
 
-.mission-content h2 h4 {
-  display: inline;
-  justify-content: center;
-  text-align: center;
+.mission-content {
+  display: inline-block;
   background-color: black;
-  height: 100px;
+  justify-content: center;
+  align-items: center;
   width: 1220px;
+  height: 100px;
 }
 
 /*Featured Teas*/
+
+.feature-title {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  height: 100px;
+  width: 1220px;
+}
 
 .feature-title {
   text-align: center;
@@ -76,13 +82,12 @@ header nav span {
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center space-around;
   margin: 0 auto;
 }
 
-
-.feature span h4 {
-  align-content: flex-end;
+.feature span {
+  padding-top: 210px;
 }
 
 .feature .feature-fall {
@@ -127,11 +132,11 @@ header nav span {
 
 /*Locations*/
 .locations {
-  display: flex;
   padding-top: 100px;
+  display: flex;
 }
 
-.locations .locations-content {
+.locations-content {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   background-repeat: no-repeat;
   height: 500px;
@@ -139,6 +144,37 @@ header nav span {
   margin: 0 auto;
 }
 
+.locations-downtown,
+.locations-eastbayside,
+.locations-oakdale {
+  display: inline-block;
+  align-items: center;
+  opacity: 1;
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  align-content: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+/*locations address {
+  display: inline;
+  opacity: 1;
+  width: 300px;
+  height: 100px;
+  background-color: black;
+
+}
+
+ {
+  display: inline;
+  opacity: 1;
+  width: 300px;
+  height: 100px;
+  background-color: black;
+
+}
+*/
 /*Contact Info*/
 h2 h5 {
   color: seashell;
