@@ -98,7 +98,6 @@ header {
 }
 
 
-
 /*Locations*/
 .locations {
   margin-top: 40px;
@@ -124,9 +123,10 @@ header {
   width: 300px;
   height: 250px;
   background-color: black;
+  margin: 0 40px;
+}
+h3, h4 {
   justify-content: center;
-  /*padding-top: 30px;*/
-
 }
 
 /*Contact Info*/
